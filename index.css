@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy: #1F2D3D;
+    --teal: #4BA3A6;
+    --coral: #FF7D6E;
+    --beige: #F4E9E1;
+    --mint: #CFE1D6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-heading {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+}
+
+@media print {
+  /* Hide all interactive UI elements */
+  .no-print,
+  nav,
+  header,
+  .print-hide,
+  button,
+  .tab-navigation,
+  .date-switcher,
+  .notification-toast {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #1f2d3d !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 11pt !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .report-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px 28px !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+  }
+
+  .page-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Keep colors accurate on print */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+

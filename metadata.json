@@ -1,0 +1,6 @@
+{
+  "name": "Diário de Bordo Neuro",
+  "description": "Rastreador diário e relatório clínico para acompanhamento de crianças atípicas com metodologia Eli Cascão.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
